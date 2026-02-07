@@ -42,7 +42,7 @@ O projeto adota uma estética **Modern Slate**, focada em legibilidade e confort
 
 * **Python 3.x**: Linguagem base.
 * **CustomTkinter**: Interface gráfica moderna com suporte a temas.
-* **PIL (Pillow)**: Gerenciamento de elementos visuais.
+
 * **Estrutura de Módulos**:
     * `basemtm.py`: Implementação das funções matemáticas.
     * `design.py`: Gerenciamento de cores, fontes e temas globais.
@@ -63,7 +63,7 @@ cd appConjuntoUFMA
 ```
 3. **Instale as bibliotecas necessárias:**:
 ```PowerShell
-py -m pip install customtkinter Pillow
+py -m pip install customtkinter 
 ```
  3. **Inicie a aplicação**:   
 ```PowerShell
