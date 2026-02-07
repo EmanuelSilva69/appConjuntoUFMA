@@ -1,5 +1,5 @@
 # 🧮  Analisador de Conjuntos.
-Este projeto é uma ferramenta interativa para manipulação e análise de conjuntos matemáticos, desenvolvida como parte de estudos em Matemática Discreta e Algoritmos. O software permite realizar operações fundamentais e verificar relações lógicas entre conjuntos inseridos pelo usuário e conjuntos gerados aleatoriamente.
+Este projeto é uma ferramenta interativa para manipulação e análise de conjuntos matemáticos, desenvolvida como parte de estudos em Lógica e Matemática Discreta. O software permite realizar operações fundamentais e verificar relações lógicas entre conjuntos inseridos pelo usuário e conjuntos gerados aleatoriamente.
 
 ## 📋 Visão Geral
 A aplicação foca na manipulação manual de coleções, implementando a lógica algorítmica por trás de cada operação de conjunto.
@@ -9,7 +9,7 @@ A aplicação foca na manipulação manual de coleções, implementando a lógic
 * **União e Interseção**: Agrupamento e filtragem de elementos comuns.
 * **Diferenças**: Cálculo de diferença relativa e simétrica entre conjuntos.
 * **Relações**: Verificação de igualdade e pertinência (subconjuntos).
-* **Cardinalidade**: Contagem de elementos únicos.
+* **Cardinalidade**: Contagem de elementos .
 
 ## 🎨 Interface e Experiência do Usuário
 O projeto utiliza a biblioteca CustomTkinter para oferecer uma interface moderna com suporte a temas e elementos visuais dinâmicos.
@@ -54,9 +54,9 @@ O projeto adota uma estética **Modern Slate**, focada em legibilidade e confort
 
 Siga estes passos para configurar o projeto na sua máquina:
 1. **Clone o repositório** (ou baixe os arquivos):
-   ```bash
-   git clone https://github.com/EmanuelSilva69/appConjuntoUFMA.git
-
+  ```bash
+git clone https://github.com/EmanuelSilva69/appConjuntoUFMA.git
+```
 2. **Entrar na pasta do projeto**:
 ```bash
 cd appConjuntoUFMA
