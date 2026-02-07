@@ -15,11 +15,11 @@ def gerar_conjunto_aleatorio(modo="numeros"):
             pool = range(1, 31)
     elif modo == "letras":
             # Apenas letras do alfabeto 
-            pool = string.ascii_letters
+            pool = string.ascii_lowercase
     else:
             # Modo Misto: mistura números, letras e símbolos especiais
             simbolos = "!@#$%&*?"
-            pool = list(range(1, 31)) + list(string.ascii_letters) + list(simbolos)
+            pool = list(range(1, 31)) + list(string.ascii_lowercases) + list(simbolos)
 
         # random.sample garante que os elementos sejam únicos
     selecao = random.sample(list(pool), tamanho)
@@ -49,7 +49,7 @@ def obter_conjunto_usuario():
                 elementos.add(valor)
             except ValueError:
                 # Se falhar (for letra/símbolo), mantém como string limpa
-                elementos.add(item.strip())
+                elementos.add(item.strip().lower())
         
         # 4. Validação do tamanho conforme o requisito da Unidade 1
         quantidade = len(elementos)
