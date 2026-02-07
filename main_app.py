@@ -67,7 +67,7 @@ class AppConjuntos(ctk.CTk):
         self.after(3000, self.label_feedback.destroy)
         #mas tipo, eu botei só pra mostrar o feedback mesmo, como um caso de teste. 
     def executar_calculos(self):
-        entrada = self.entry_usuario.get()
+        entrada = self.entry_usuario.get().lower()
         
         # Simulando a lógica inteligente que você já criou
         partes = entrada.replace(',', ' ').split()
@@ -89,7 +89,7 @@ class AppConjuntos(ctk.CTk):
 
         B = self.conj_b
         U = basemtm.uniao(A, B) #cria um universo meio genérico, botei só nomes para
-        U.update({0, 100, 'X', 'Y'}) # Adiciona extras para garantir que o complemento não seja vazio
+        U.update({0, 100, 'x', 'y'}) # Adiciona extras para garantir que o complemento não seja vazio
         # Realizando Operações do seu basemtm.py
         uniao = basemtm.uniao(A, B)
         inter = basemtm.intersecao(A, B)
