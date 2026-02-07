@@ -40,7 +40,7 @@ def obter_conjunto_usuario():
         # 2. Divisão da string em partes (split)
         partes = entrada_limpa.split()
         
-        # 3. Processamento Inteligente (Escadinha de conversão)
+        # 3. Processamento Inteligente para diferenciar números de letras/símbolos
         elementos = set()
         for item in partes:
             try:
