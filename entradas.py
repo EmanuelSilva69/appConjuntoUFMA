@@ -19,7 +19,7 @@ def gerar_conjunto_aleatorio(modo="numeros"):
     else:
             # Modo Misto: mistura números, letras e símbolos especiais
             simbolos = "!@#$%&*?"
-            pool = list(range(1, 31)) + list(string.ascii_lowercases) + list(simbolos)
+            pool = list(range(1, 31)) + list(string.ascii_lowercase) + list(simbolos)
 
         # random.sample garante que os elementos sejam únicos
     selecao = random.sample(list(pool), tamanho)
@@ -60,4 +60,5 @@ def obter_conjunto_usuario():
             return elementos
         else:
             print(f"Erro: Você forneceu {quantidade} elementos únicos.")
+
             print("O conjunto deve ter no mínimo 4 e no máximo 8 elementos.")
