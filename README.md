@@ -94,7 +94,7 @@ Orquestra toda aplicação usando CustomTkinter:
 * Cálculo de todas operações
 * Renderização formatada dos resultados
 
-<h1>⚙️ Como Instalar e Executar</h1>
+<h1> Como Instalar e Executar</h1>
 
 Siga estes passos para configurar o projeto na sua máquina:
 1. **Clone o repositório** (ou baixe os arquivos):
