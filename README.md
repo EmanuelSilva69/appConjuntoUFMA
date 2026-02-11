@@ -1,6 +1,24 @@
 #   Analisador de Conjuntos.
 Este projeto é uma ferramenta interativa para manipulação e análise de conjuntos matemáticos, desenvolvida como parte de estudos em Lógica e Matemática Discreta. O software permite realizar operações fundamentais e verificar relações lógicas entre conjuntos inseridos pelo usuário e conjuntos gerados aleatoriamente.
 
+## Descrição do Problema
+O desafio consiste em desenvolver um software para manipular dois conjuntos (A e B) com as seguintes restrições:
+
+* **Entrada de Dados:** O **Conjunto A** é fornecido pelo usuário e o **Conjunto B** é gerado aleatoriamente. Ambos devem possuir, obrigatoriamente, entre **4 e 8 elementos**. Esses conjuntos podem ter ou não elementos em comum.
+* **Tipagem:** Os elementos podem ser números inteiros ou strings.
+* **Processamento e Saída:** O programa deve validar o tamanho dos conjuntos e realizar o cálculo exibindo:
+    * As operações de **União** ($A \cup B$), **Interseção** ($A \cap B$) e **Diferença** ($A - B$).
+    * A **Cardinalidade** de $A$, $B$ e da união resultante.
+    * **Cálculo de Complemento:** O programa define um **Conjunto Universo ($U$)** (composto por letras e números) para calcular e exibir o complemento de A ($A^c$) e o complemento de B ($B^c$), representando os elementos de $U$ que não pertencem aos conjuntos selecionados.
+
+##  Objetivo do Programa
+
+O objetivo central deste software é servir como uma ferramenta didática e funcional para a visualização de operações da Teoria dos Conjuntos.
+
+* **Demonstrar a Lógica Algorítmica:** Demonstrar o funcionamento interno das operações de conjuntos (união, interseção, diferença) através de algoritmos de busca e filtragem, evitando o uso de funções prontas da linguagem para validar o raciocínio lógico.
+* **Validar Propriedades Matemáticas:** Aplicar na prática conceitos de cardinalidade, pertinência e contenção, garantindo que o software respeite as regras da Matemática Discreta .
+* **Facilitar a Visualização:** Proporcionar uma interface clara onde o usuário possa comparar um conjunto criado por ele com um conjunto gerado pelo sistema, observando imediatamente os resultados das interações entre eles ($A \cup B$, $A \cap B$, etc.).
+
 ##  Visão Geral
 A aplicação foca na manipulação manual de coleções, implementando a lógica algorítmica por trás de cada operação de conjunto.
 
@@ -61,7 +79,7 @@ O projeto adota uma estética **Modern Slate**, focada em legibilidade e confort
     * `design.py`: Gerenciamento de cores, fontes e temas globais.
     * `entradas.py`: Lógica de randomização e limpeza de inputs.
     * `main.py`: Orquestrador da interface e fluxo do app.
-    * 
+
 ##  Arquitetura do Código
 
 ### [`basemtm.py`](basemtm.py) - Motor Matemático
@@ -75,8 +93,6 @@ Implementa manualmente cada operação usando algoritmos com loops e condicionai
 * `cardinalidade(conjunto)` → Conta elementos manualmente com loop
 * `eh_subconjunto(a, b)` → Verifica contenção (A ⊆ B)
 * `sao_disjuntos(a, b)` → Verifica se a interseção é vazia
-
-**Nota**: Todas as funções evitam propositalmente usar operadores nativos como `|`, `&`, `-` para demonstrar compreensão algorítmica.
 
 ### [`entradas.py`](entradas.py) - Gerenciamento de Inputs
 * `gerar_conjunto_aleatorio(modo)` → Gera conjunto com 4-8 elementos usando `random.sample()`
