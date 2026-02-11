@@ -19,10 +19,7 @@ O objetivo central deste software é servir como uma ferramenta didática e func
 * **Validar Propriedades Matemáticas:** Aplicar na prática conceitos de cardinalidade, pertinência e contenção, garantindo que o software respeite as regras da Matemática Discreta .
 * **Facilitar a Visualização:** Proporcionar uma interface clara onde o usuário possa comparar um conjunto criado por ele com um conjunto gerado pelo sistema, observando imediatamente os resultados das interações entre eles ($A \cup B$, $A \cap B$, etc.).
 
-##  Visão Geral
-A aplicação foca na manipulação manual de coleções, implementando a lógica algorítmica por trás de cada operação de conjunto.
-
-<h3> Funcionalidades Principais</h3>
+## Funcionalidades Principais
 
 * **União e Interseção**: Agrupamento e filtragem de elementos comuns.
 * **Diferenças**: Cálculo de diferença relativa e simétrica entre conjuntos.
